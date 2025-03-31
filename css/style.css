@@ -1,0 +1,123 @@
+@import url("fonts.css");
+/* Variablen */
+
+:root {
+  --body-dark-opacity: #01284081;
+  --body-dark: #012840;
+  /* --secondary-opacity: #6593A681;
+  --secondary: #6593A6;
+  --tertiary-opacity: #260D0B81;
+  --tertiary: #260D0B;
+  --action-primary-opacity: #05f2f281;
+  --action-primary: #05f2f2;
+  --action-secondary-opacity: #F2740581;
+  --action-secondary: #F27405; */
+
+  --text: #939393;
+  --text-white: #fff;
+  --body: #fff;
+  --body-darken: #f7f7f7;
+
+  --primary-opacity: #8c012681;
+  --primary: #8c0126;
+  --secondary-opacity: #dd993381;
+  --secondary: #dd9933;
+  --tertiary-opacity: #660e3681;
+  --tertiary: #660e36;
+  --info: #f36d33;
+
+  --gray-opacity10: #eeeeee81;
+  --gray10: #eee;
+  --gray-opacity20: #cccccc81;
+  --gray20: #ccc;
+  --gray-opacity30: #99999981;
+  --gray30: #999;
+  --gray-opacity50: #66666681;
+  --gray50: #666;
+  --gray-opacity75: #33333381;
+  --gray75: #333;
+
+}
+
+/* Basics */
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  color: var(--text);
+  background-color: var(--body-darken);
+}
+
+/* Typo */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: var(--primary);
+}
+
+pre {
+  background: var(--body-darken);
+  border: 1px solid var(--gray20);
+  border-left: 3px solid var(--info);
+  border-radius: 0.2rem;
+  color: var(--gray50);
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
+
+code {
+  font-family: Consolas, "Courier New";
+  color: var(--gray30);
+}
+
+/* Tabellen */
+table {
+  border-collapse: collapse;
+  border: 1px solid var(--gray30);
+}
+tr:nth-child(odd) {
+  background-color: var(--gray-opacity20);
+}
+td, th {
+  border: 1px solid var(--gray30);
+  padding: 5px;
+  text-align: center;
+}
+
+/* Formulare */
+form p,
+form div {
+  display: flex;
+}
+label {
+  width: 14rem;
+}
+.radio {
+  display: block;
+}
+input[type="text"] {
+  width: 28rem;
+  padding: 10px;
+  margin-left: 10px;
+  border: 1px solid var(--gray20);
+  border-radius: .5rem;
+}
+input[type="submit"],
+button {
+  padding: 10px;
+  margin-left: 10px;
+  border: 1px solid var(--secondary);
+  border-radius: .5rem;
+  background-color: var(--secondary-opacity);
+}
+input[type="submit"]:hover,
+button:hover {
+  background-color: var(--secondary);
+  cursor: pointer;
+}
